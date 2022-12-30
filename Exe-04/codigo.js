@@ -7,7 +7,7 @@ document.write(`Seu nome tem <strong> ${nome.length} </strong> letras.`);
 document.write(`Seu nome ${nome.toUpperCase()}.`);
 
 document.write(`Seu nome ${nome.toLowerCase()}.`);
-
+  
 salario.toFixed(2);
 
 salario.toFixed(2).replace('.', ',');
