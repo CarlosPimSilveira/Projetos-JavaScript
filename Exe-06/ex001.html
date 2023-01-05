@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript</title>
+</head>
+<body>
+    <!--
+    onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"
+    Dentro do html
+    -->
+    <div id="area">
+        Interaja...
+    </div>
+
+    <script>
+
+        var a = window.document.getElementById('area')
+          //- Aqui podemos ter problema de memoria porem como é apenas estudo por hora não tem problema  
+
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar(){
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+        }
+
+        function entrar(){
+            a.innerText = 'Entrou!'
+        }
+
+        function sair(){
+            a.innerText = 'Saiu!'
+            a.style.background = 'green'
+        }
+
+    </script>
+    <!--
+        mouseenter
+            - ao entrar na area da div
+        mousemove
+            - ao mover dentro da area da div
+        mousedown
+            - ao clicar e segurar o click
+        mouseup
+            - ao soltar o click
+        click
+            - ao realizar o click normalmente
+        mouseout
+            - Ao sair da area da div
+    -->
+
+</body>
+</html>
