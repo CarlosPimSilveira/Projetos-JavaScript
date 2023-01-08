@@ -1,12 +1,29 @@
 body{
-    font: normal 18pt arial;
+    font: normal 20pt arial;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+div.bloco{
+    background-color: rgb(88, 86, 86);
+    max-width: 500px;
+    margin: auto;
 }
 
 input{
-    font: normal 18px arial;
+    font: normal 20px arial;
     width: 100px;
 }
 
-div#res{
+div.bt{
+    margin-top: 5px;
+}
+
+div{
     margin-top: 20px;
+}
+
+div#res{
+    margin-top: 5px;
 }
