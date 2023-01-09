@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu pais</title>
+</head>
+<body>
+    <h1>Sistema de pais</h1>
+    Qual pais você nasceu: <input type="text" name="txtvel" id="txtvel">
+    <br>
+    <input type="button" value="Verificar" onclick="pais()">
+    <br>
+    <div id="res"></div>
+
+    <script>
+        function pais(){
+            var txtv = window.document.querySelector('input#txtvel')
+            var res = window.document.querySelector('div#res')
+            var pais = (txtv.value)
+
+            res.innerHTML = `<p> Seu pais é <strong>${pais}</strong></p>`
+
+            if(pais == 'Brasil'){
+                res.innerHTML += 'Você é Brasileiro!'
+            } else {
+                res.innerHTML += 'Você é Estrangeiro'
+            }
+        }
+    </script>
+
+</body>
+</html>
