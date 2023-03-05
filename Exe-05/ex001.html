@@ -11,7 +11,7 @@
     <h1>Aulas de DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
 
     <script>    
 
@@ -19,9 +19,16 @@
         //corpo.style.background = 'black'
 
         var p1 = window.document.getElementsByTagName('p')[1]
-        
+        //var d = window.document.getElementById('msg') 
+        //d.style.background = 'green'
+        //d.innerText = 'Estou aguardando...'
+
+
         window.document.write('Esta escrito assim: ' + p1.innerText)
         p1.style.color = 'blue'
+
+        var d = window.document.querySelector('div#msg')
+        d.style.color = 'blue'
 
         document.write(p1.innerHTML)
 
